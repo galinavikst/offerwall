@@ -1,0 +1,32 @@
+import React from "react";
+import { IBook } from "../types";
+
+interface IBookProps {
+  book: IBook;
+}
+
+const Book = ({ book }: IBookProps) => {
+  return (
+    <li className="w-[305px] flex flex-col gap-3">
+      <img
+        src={book.imgSrc}
+        title="the best book"
+        alt={book.title + " book"}
+        className="w-auto h-auto shadow-md rounded-[30px]"
+      />
+      <div className="bg-white rounded-[30px] shadow-md p-2.5">
+        <h3 title={book.title} className="text-center font-bold uppercase mb-3">
+          {book.title}
+        </h3>
+        <div className="flex items-center">
+          <p className="w-1/2 text-center font-bold text-red-500">
+            {book.price} $
+          </p>
+          <button className="w-1/2 btn-accent-contained">buy</button>
+        </div>
+      </div>
+    </li>
+  );
+};
+
+export default Book;

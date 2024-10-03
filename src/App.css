@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@layer components {
+  .heading2 {
+    @apply font-bold lg:text-4xl text-2xl;
+  }
+  .section {
+    @apply max-w-7xl mx-auto flex flex-col gap-14 lg:gap-9 justify-center items-center;
+  }
+  .btn-accent-contained {
+    @apply text-center shadow uppercase font-bold bg-accent-main rounded-full p-2.5 hover:opacity-70 focus:opacity-70 active:bg-yellow-600;
+  }
+}
