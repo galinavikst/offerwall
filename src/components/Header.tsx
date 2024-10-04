@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "./Logo";
 import cartSvg from "../assets/icons/cart.svg";
 import { INavItem } from "../types";

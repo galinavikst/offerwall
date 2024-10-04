@@ -1,4 +1,3 @@
-import React from "react";
 import removeSvg from "../assets/icons/remove.svg";
 import { IBook } from "../types";
 

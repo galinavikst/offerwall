@@ -16,6 +16,9 @@
 * {
   transition: all ease-in 140ms;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0 auto;

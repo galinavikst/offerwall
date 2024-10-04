@@ -1,4 +1,3 @@
-import React from "react";
 import Form from "./Form";
 import CartItem from "./CartItem";
 import { IBook, INavItem } from "../types";

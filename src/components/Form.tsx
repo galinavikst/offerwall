@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { MONTHS, PAYMENT, REQUIRED, initValues } from "../constants";
 import arrowDownSvg from "../assets/icons/arrow-d.svg";
 import { useForm, Controller } from "react-hook-form";
