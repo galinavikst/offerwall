@@ -13,6 +13,7 @@ const Footer = () => {
         <div className="sm:w-full w-fit m-auto">
           <Logo />
 
+          {/* social */}
           <ul className="flex gap-3 my-3">
             {SOCIAL.map((el) => (
               <li key={el.id}>
@@ -33,6 +34,7 @@ const Footer = () => {
           </p>
         </div>
 
+        {/* contacts */}
         <div className="sm:w-full w-fit m-auto text-sm max-w-[290px]">
           <address className="not-italic flex items-center gap-8">
             <img

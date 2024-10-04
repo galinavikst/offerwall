@@ -1,9 +1,3 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import Shop from "./components/Shop";
-import Cart from "./components/Cart";
-
 import { IBook, INavItem, ISocial } from "./types";
 
 import domSvg from "./assets/icons/dom.svg";
@@ -24,31 +18,26 @@ export const NAV: INavItem[] = [
     title: "Home",
     id: "home",
     isActive: false,
-    component: Home,
   },
   {
     title: "Shop",
     id: "shop",
     isActive: true,
-    component: Shop,
   },
   {
     title: "About",
     id: "about",
     isActive: false,
-    component: About,
   },
   {
     title: "Contact",
     id: "contact",
     isActive: false,
-    component: Contact,
   },
   {
     title: "Shopping Cart", // keep cart the last one obj
     id: "cart",
     isActive: false,
-    component: Cart,
   },
 ];
 
@@ -106,7 +95,7 @@ export const BOOKS: IBook[] = [
 export const SOCIAL: ISocial[] = [
   {
     imgSrc: fbSvg,
-    linkTo: "#",
+    linkTo: "#", // change with company social links
     id: "facebook",
   },
   {

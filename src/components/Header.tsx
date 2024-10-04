@@ -17,15 +17,16 @@ const Header = ({ nav, setNav }: IHeader) => {
         <nav className="hidden md:flex gap-1 justify-between bg-white rounded-full">
           {nav &&
             nav.slice(0, -1).map((el) => (
-              <button
+              <a
                 key={el.id}
+                href={`#${el.id}`}
                 onClick={() => setNav(el)}
                 className={`${
                   el.isActive ? "bg-accent-main text-bg-dark" : "text-black"
                 } flex items-center justify-center font-medium rounded-full lg:p-3 p-1 w-20 text-center`}
               >
                 {el.title}
-              </button>
+              </a>
             ))}
         </nav>
 
@@ -35,7 +36,8 @@ const Header = ({ nav, setNav }: IHeader) => {
             <span className="bg-bg-dark h-0.5 w-full"></span>
             <span className="bg-bg-dark h-0.5 w-full"></span>
           </button>
-          <button
+          <a
+            href="#cart"
             onClick={() => setNav(nav[nav.length - 1])}
             className={`${
               nav.find((el) => el.isActive)?.id === "cart"
@@ -44,7 +46,7 @@ const Header = ({ nav, setNav }: IHeader) => {
             }  bg-accent-main p-2 rounded-full w-fit`}
           >
             <img src={cartSvg} alt="cart" className="lg:w-6 w-5" />
-          </button>
+          </a>
         </div>
       </div>
     </header>

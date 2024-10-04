@@ -6,6 +6,7 @@ export default {
       colors: {
         "bg-light": "#F8D8B8",
         "bg-dark": "#004832",
+        "grey-light": "#EBEBEB",
         "accent-main": "#FFD012",
       },
     },

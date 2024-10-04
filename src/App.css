@@ -10,9 +10,6 @@
 }
 
 @layer components {
-  .heading2 {
-    @apply font-bold lg:text-4xl text-2xl;
-  }
   .section {
     @apply max-w-7xl mx-auto flex flex-col gap-14 lg:gap-9 justify-center items-center;
   }

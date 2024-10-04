@@ -3,9 +3,10 @@ import { IBook } from "../types";
 
 interface IBookProps {
   book: IBook;
+  addToCart: (el: IBook) => void;
 }
 
-const Book = ({ book }: IBookProps) => {
+const Book = ({ book, addToCart }: IBookProps) => {
   return (
     <li className="w-[305px] flex flex-col gap-3">
       <img
@@ -22,7 +23,12 @@ const Book = ({ book }: IBookProps) => {
           <p className="w-1/2 text-center font-bold text-red-500">
             {book.price} $
           </p>
-          <button className="w-1/2 btn-accent-contained">buy</button>
+          <button
+            onClick={() => addToCart(book)}
+            className="w-1/2 btn-accent-contained"
+          >
+            buy
+          </button>
         </div>
       </div>
     </li>

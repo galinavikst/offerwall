@@ -4,7 +4,6 @@ export interface INavItem {
   id: string;
   isActive: boolean;
   title: string;
-  component: () => JSX.Element;
 }
 
 export interface IBook {
@@ -12,6 +11,7 @@ export interface IBook {
   id: number;
   price: number;
   imgSrc: string;
+  quantity?: number;
 }
 
 export interface ISocial {
