@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# Book shop
+## Features:
+  - Books rewiev add / remove from cart / change quantity / count total.
+  - Responsive design is taken from provided Figma.
+  - Form submition / validation on client side.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technology Stack
 
-Currently, two official plugins are available:
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [Typescript](https://www.typescriptlang.org/): A modern programming language.
+- [Vite](https://vite.dev/): Fast frontend build tool powering the next generation of web applications.
+- [Tailwind](https://tailwindcss.com/): A popular utility-first CSS framework.
+- [React-input-mask](https://www.npmjs.com/package/react-input-mask): Input masking component for React.
+- [React-hook-form](https://www.react-hook-form.com/): Performant, flexible and extensible forms with easy-to-use validation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+1. **Clone the repository:**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+    ```bash
+    git clone https://github.com/galinavikst/offerwall.git
+    ```
 
-- Configure the top-level `parserOptions` property like this:
+2. **Navigate to the project directory:**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+    ```bash
+    cd offerwall
+    ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. **Install the dependencies:**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    ```bash
+    npm install
+    ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+5. **Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to see the app in action.**
+
+## Deployment
+
+The app is deployed using [Netlify](https://www.netlify.com/)). You can access the deployed version at: [book shop](https://offerwall.netlify.app/)
+
+## Speed test 
+![image](https://github.com/user-attachments/assets/57a5d0ed-c6f5-4d87-93f1-25b6bb58f98e)
+
