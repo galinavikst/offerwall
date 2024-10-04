@@ -57,9 +57,11 @@ const Form = () => {
             >
               <img
                 src={el.imgSrc}
+                width={64}
+                height={35}
                 alt="payment method icon"
                 title="payment method logo"
-                className="w-auto h-auto"
+                loading="lazy"
               />
             </button>
           ))}

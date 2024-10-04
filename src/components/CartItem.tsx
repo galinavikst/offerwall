@@ -11,10 +11,12 @@ const CartItem = ({ book, handleCartItems }: ICartItemProps) => {
     book && (
       <li className="bg-grey-light p-5 lg:mx-0 mx-3 lg:w-full w-[80%] rounded-[30px] flex gap-3 items-center justify-between relative">
         <img
-          className="w-[105px] h-auto"
+          width={105}
+          height={105}
           src={book.imgSrc}
           alt="book"
           title={book.title}
+          loading="lazy"
         />
         <div className="grow flex md:flex-nowrap flex-wrap md:flex-row  flex-col gap-2 md:justify-between items-center">
           <span className="text-center">{book.title}</span>

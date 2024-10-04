@@ -7,8 +7,10 @@ interface IBookProps {
 
 const Book = ({ book, addToCart }: IBookProps) => {
   return (
-    <li className="w-[305px] flex flex-col gap-3">
+    <li className="flex flex-col gap-3">
       <img
+        width={305}
+        height={375}
         src={book.imgSrc}
         title="the best book"
         alt={book.title + " book"}
