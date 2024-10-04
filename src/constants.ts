@@ -1,4 +1,4 @@
-import { IBook, INavItem, ISocial } from "./types";
+import { IBook, INavItem, IOption, ISocial } from "./types";
 
 import domSvg from "./assets/icons/dom.svg";
 import arcaSvg from "./assets/icons/arca.svg";
@@ -12,6 +12,37 @@ import fbSvg from "./assets/icons/fb.svg";
 import instaSvg from "./assets/icons/insta.svg";
 import twitSvg from "./assets/icons/twit.svg";
 import pintSvg from "./assets/icons/pint.svg";
+import masterSvg from "./assets/icons/master.svg";
+import applePaySvg from "./assets/icons/apple-pay.svg";
+import visaSvg from "./assets/icons/visa.svg";
+
+export const REQUIRED: string = "This field is required.";
+export const MONTHS: IOption[] = [
+  {
+    value: "0",
+    label: "Month",
+  },
+  { value: "1", label: "Jan" },
+  { value: "2", label: "Feb" },
+  { value: "3", label: "Mar" },
+  { value: "4", label: "Apr" },
+  { value: "5", label: "May" },
+  { value: "6", label: "Jun" },
+  { value: "7", label: "Jul" },
+  { value: "8", label: "Aug" },
+  { value: "9", label: "Sep" },
+  { value: "10", label: "Oct" },
+  { value: "11", label: "Nov" },
+  { value: "12", label: "Dec" },
+];
+
+export const initValues: { [key: string]: string } = {
+  clientName: "",
+  cardNumber: "",
+  month: "",
+  year: "",
+  code: "",
+};
 
 export const NAV: INavItem[] = [
   {
@@ -112,5 +143,20 @@ export const SOCIAL: ISocial[] = [
     imgSrc: pintSvg,
     linkTo: "#",
     id: "pinterest",
+  },
+];
+
+export const PAYMENT = [
+  {
+    id: "master",
+    imgSrc: masterSvg,
+  },
+  {
+    id: "apple",
+    imgSrc: applePaySvg,
+  },
+  {
+    id: "visa",
+    imgSrc: visaSvg,
   },
 ];

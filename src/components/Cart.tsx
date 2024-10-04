@@ -27,7 +27,7 @@ const Cart = ({ data, handleNav, handleCartItems }: ICartProps) => {
           </h2>
           <ul className="flex flex-col gap-y-3 py-6 border-t border-grey-light">
             {data.length === 0 ? (
-              <p className="opacity-70 text-sm">no items in the cart...</p>
+              <p className="opacity-70 text-sm mx-3">no items in the cart...</p>
             ) : (
               data.map((book) => (
                 <CartItem

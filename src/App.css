@@ -16,4 +16,7 @@
   .btn-accent-contained {
     @apply text-center shadow uppercase font-bold bg-accent-main rounded-full p-2.5 hover:opacity-70 focus:opacity-70 active:bg-yellow-600;
   }
+  .input {
+    @apply p-5 bg-transparent rounded-[30px] border border-white w-full;
+  }
 }

@@ -19,3 +19,13 @@ export interface ISocial {
   linkTo: string;
   id: string;
 }
+
+export interface IPayment {
+  id: string;
+  imgSrc: string;
+}
+
+export interface IOption {
+  value: string;
+  label: string;
+}
