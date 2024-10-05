@@ -1,13 +1,13 @@
 import { IBook, INavItem, IOption, ISocial } from "./types";
 
-import domSvg from "./assets/icons/dom.svg";
-import arcaSvg from "./assets/icons/arca.svg";
-import bolsaSvg from "./assets/icons/bolsa.svg";
-import cidadeSvg from "./assets/icons/cidade.svg";
-import horaSvg from "./assets/icons/hora.svg";
-import macunaSvg from "./assets/icons/macuna.svg";
-import meninoSvg from "./assets/icons/menino.svg";
-import powerSvg from "./assets/icons/power.svg";
+import domImg from "./assets/dom.png";
+import arcaImg from "./assets/arca.png";
+import bolsaImg from "./assets/bolsa.png";
+import cidadeImg from "./assets/cidade.png";
+import horaImg from "./assets/hora.png";
+import macunaImg from "./assets/macuna.png";
+import meninoImg from "./assets/menino.png";
+import powerImg from "./assets/power.png";
 import fbSvg from "./assets/icons/fb.svg";
 import instaSvg from "./assets/icons/insta.svg";
 import twitSvg from "./assets/icons/twit.svg";
@@ -35,14 +35,6 @@ export const MONTHS: IOption[] = [
   { value: "11", label: "Nov" },
   { value: "12", label: "Dec" },
 ];
-
-export const initValues: { [key: string]: string } = {
-  clientName: "",
-  cardNumber: "",
-  month: "",
-  year: "",
-  code: "",
-};
 
 export const NAV: INavItem[] = [
   {
@@ -77,49 +69,49 @@ export const BOOKS: IBook[] = [
     title: "“Dom Casmurro”",
     id: 1,
     price: 50,
-    imgSrc: domSvg,
+    imgSrc: domImg,
   },
   {
     title: "“The Power of Habit”",
     id: 2,
     price: 60,
-    imgSrc: powerSvg,
+    imgSrc: powerImg,
   },
   {
     title: "“O Menino Maluquinho”",
     id: 3,
     price: 70,
-    imgSrc: meninoSvg,
+    imgSrc: meninoImg,
   },
   {
     title: "“A Hora da Estrela”",
     id: 4,
     price: 30,
-    imgSrc: horaSvg,
+    imgSrc: horaImg,
   },
   {
     title: "“Cidade de Deus”",
     id: 5,
     price: 90,
-    imgSrc: cidadeSvg,
+    imgSrc: cidadeImg,
   },
   {
     title: "“Macunaíma”",
     id: 6,
     price: 45,
-    imgSrc: macunaSvg,
+    imgSrc: macunaImg,
   },
   {
     title: "“A Bolsa Amarela”",
     id: 7,
     price: 50,
-    imgSrc: bolsaSvg,
+    imgSrc: bolsaImg,
   },
   {
     title: "“A Arca de Noé”",
     id: 8,
     price: 85,
-    imgSrc: arcaSvg,
+    imgSrc: arcaImg,
   },
 ];
 

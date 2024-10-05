@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MONTHS, PAYMENT, REQUIRED, initValues } from "../constants";
+import { MONTHS, PAYMENT, REQUIRED } from "../constants";
 import arrowDownSvg from "../assets/icons/arrow-d.svg";
 import { useForm, Controller } from "react-hook-form";
 import { useMask } from "@react-input/mask";
@@ -24,7 +24,13 @@ const Form = () => {
     formState: { errors },
   } = useForm({
     mode: "onChange",
-    defaultValues: initValues,
+    defaultValues: {
+      clientName: "",
+      cardNumber: "",
+      month: "",
+      year: "",
+      code: "",
+    },
   });
 
   const submitForm = (data: { [key: string]: string }) => {
