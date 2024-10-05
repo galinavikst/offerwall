@@ -8,14 +8,18 @@ interface IBookProps {
 const Book = ({ book, addToCart }: IBookProps) => {
   return (
     <li className="flex flex-col gap-3">
-      <img
-        width={305}
-        height={375}
-        src={book.imgSrc}
-        title="the best book"
-        alt={book.title + " book"}
-        className="w-auto h-auto shadow-md rounded-[30px]"
-      />
+      <div className="w-[305px] h-[275px]">
+        <img
+          width={305}
+          height={275}
+          src={book.imgSrc}
+          title="the best book"
+          alt={book.title + " book"}
+          loading="lazy"
+          className="shadow-md rounded-[30px]"
+        />
+      </div>
+
       <div className="bg-white rounded-[30px] shadow-md p-2.5">
         <h3 title={book.title} className="text-center font-bold uppercase mb-3">
           {book.title}
