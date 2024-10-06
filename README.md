@@ -43,7 +43,7 @@
 
 ## Deployment
 
-The app is deployed using [Netlify](https://www.netlify.com/)). You can access the deployed version at: [book shop](https://offerwall.netlify.app/)
+The app is deployed using [Netlify](https://www.netlify.com/). You can access the deployed version at: [book shop](https://offerwall.netlify.app/)
 
 ## Speed test 
 ![image](https://github.com/user-attachments/assets/8c2282c6-a9d5-4cf2-a0df-ae9d16bb67b2)
