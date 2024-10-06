@@ -15,28 +15,32 @@ const Cart = ({ data, handleNav, handleCartItems }: ICartProps) => {
   }, 0);
 
   return (
-    <section className="section">
+    <section className="section text-black">
       <div className="bg-white lg:flex lg:gap-8 block md:w-[95%] w-full rounded-[30px] overflow-hidden m-4 md:m-14">
-        <div className="lg:w-[60%] mb-20 w-full lg:p-14 p-0">
-          <h2
-            title="company shoping cart"
-            className="lg:text-2xl font-semibold lg:mb-6 lg:m-0 m-3"
-          >
-            Shopping Cart
-          </h2>
-          <ul className="flex flex-col gap-y-3 py-6 border-t border-grey-light">
-            {data.length === 0 ? (
-              <p className="opacity-70 text-sm mx-3">no items in the cart...</p>
-            ) : (
-              data.map((book) => (
-                <CartItem
-                  key={book.id}
-                  book={book}
-                  handleCartItems={handleCartItems}
-                />
-              ))
-            )}
-          </ul>
+        <div className="lg:w-[60%] lg:mb-0 mb-20 w-full lg:p-14 p-0 flex flex-col justify-between">
+          <div>
+            <h2
+              title="company shoping cart"
+              className="lg:text-2xl font-semibold lg:mb-6 lg:m-0 m-3"
+            >
+              Shopping Cart
+            </h2>
+            <ul className="flex flex-col gap-y-3 py-6 border-t border-grey-light">
+              {data.length === 0 ? (
+                <p className=" opacity-70 text-sm mx-3">
+                  no items in the cart...
+                </p>
+              ) : (
+                data.map((book) => (
+                  <CartItem
+                    key={book.id}
+                    book={book}
+                    handleCartItems={handleCartItems}
+                  />
+                ))
+              )}
+            </ul>
+          </div>
 
           <div className="flex flex-col-reverse md:flex-row gap-3 justify-between lg:mx-0 mx-3 lg:w-full w-[80%]">
             <a

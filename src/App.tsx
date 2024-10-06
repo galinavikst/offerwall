@@ -78,7 +78,7 @@ function App() {
   return (
     <>
       {nav && <Header nav={nav} setNav={handleNav} />}
-      <main className="grow bg-bg-light py-16 lg:py-36 px-14">
+      <main className="grow bg-bg-light sm:py-16 lg:py-36 sm:px-14 px-5 py-10">
         {activeSectionId === "cart" ? (
           <Cart
             data={cartItems}
@@ -87,7 +87,10 @@ function App() {
           />
         ) : (
           <section className="section" id="shop">
-            <h2 className="font-bold lg:text-4xl text-2xl" title="book shop">
+            <h2
+              className="font-bold lg:text-4xl text-2xl text-black"
+              title="book shop"
+            >
               Shop
             </h2>
             <ul className="flex flex-wrap gap-x-5 md:gap-y-10 gap-y-14 justify-center">

@@ -7,7 +7,7 @@ interface IBookProps {
 
 const Book = ({ book, addToCart }: IBookProps) => {
   return (
-    <li className="flex flex-col gap-3">
+    <li className="flex flex-col gap-3 text-black">
       <img
         width={305}
         height={275}

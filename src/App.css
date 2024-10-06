@@ -14,7 +14,7 @@
     @apply max-w-7xl mx-auto flex flex-col gap-14 lg:gap-9 justify-center items-center;
   }
   .btn-accent-contained {
-    @apply text-center shadow uppercase font-bold bg-accent-main rounded-full p-2.5 hover:opacity-70 focus:opacity-70 active:bg-yellow-600;
+    @apply text-center text-black shadow uppercase font-bold bg-accent-main rounded-full p-2.5 hover:opacity-70 focus:opacity-70 active:bg-yellow-600;
   }
   .input {
     @apply p-5 bg-transparent rounded-[30px] border border-white w-full;
